@@ -1,7 +1,8 @@
 pipeline {
     agent any 
-    tool name: '', type: 'maven'
-
+    tools {
+	maven ""
+	}
     stages {
         stage('Compile and Clean') { 
             steps {
